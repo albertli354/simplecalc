@@ -55,11 +55,10 @@ public class Calculator {
                     return sum / (args.count - 1)
                 }
 
-                
             case "fact":
                 if args.count == 1{
                     return 0
-                } else if args.count == 2 && Int(args[0])! == 0 {
+                } else if Int(args[0])! == 0 {
                     return 1
                 } else {
                     var result = 1
@@ -72,7 +71,6 @@ public class Calculator {
                 print("The operation is too complicated for me")
             }
         }
-        
         return 0
     }
     
